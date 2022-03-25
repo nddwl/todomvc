@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="application/json">
+    <title>signTask</title>
+</head>
+<body>
+{{template "todomvc"}}
+<form action="http://localhost:8080/todomvc/handle" method="post" enctype="multipart/form-data">
+    <h3>标记任务状态: <label><br>
+        名称:(-1为全部)<br>
+        <input name="signTask" type="text"><br>
+        状态:(完成:1未完成:0)<br>
+        <input name="signTaskCondition" type="text"><br>
+        <input type="submit">
+    </label></h3>
+</form>
+</body>
+</html>

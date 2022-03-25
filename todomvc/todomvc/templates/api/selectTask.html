@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="application/json">
+    <title>selectTask</title>
+</head>
+<body>
+{{template "todomvc"}}
+<form action="http://localhost:8080/todomvc/handle" enctype="multipart/form-data" method="post">
+    <h3>关键词查找:<label><br>
+        关键词:
+        <input name="selectTask" type="text"><br>
+        状　态:
+        <input name="taskCondition" type="text"><br>
+        (1为完成0为未完成-1为不确定)<br>
+        <input type="submit">
+    </label></h3>
+</form>
+</body>
+</html>

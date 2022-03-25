@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" content="application/json">
+    <title>addTask</title></head>
+<body>
+{{template "todomvc"}}
+<form action="http://localhost:8080/todomvc/handle" enctype="multipart/form-data" method="post">
+    <h3>新增任务: <label><br>
+        名称:
+        <input name="newTask" type="text"><br>
+        <input type="submit">
+    </label></h3>
+</form>
+</body>
+</html>

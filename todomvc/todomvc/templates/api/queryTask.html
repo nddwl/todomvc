@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="application/json">
+    <title>queryTask</title>
+</head>
+<body>
+{{template "todomvc"}}
+<form action="http://localhost:8080/todomvc/handle" enctype="multipart/form-data" method="post">
+    <h3>查询任务:<label><br>
+        任务状态:<br>
+        <input name="queryTaskCondition" type="text" ><br>
+        (完成:1或未完成:0全部:-1)<br>
+        <input type="submit">
+    </label></h3>
+</form>
+</body>
+</html>
